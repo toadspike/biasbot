@@ -8,16 +8,6 @@ z = 0
 quotes = 0
 found = False
 
-import requests
-from bs4 import BeautifulSoup
-
-c = 0
-total = 0
-location = 0
-z = 0
-quotes = 0
-found = False
-
 while c < 1: 
     url = "https://en.wikipedia.org/wiki/Special:Random"
     page = requests.get(url)
@@ -39,8 +29,6 @@ while c < 1:
             break
         elif found == True: 
             print("QUOTE: " + n)
-            c += 1
-            break
         else: pass
         found = False
         location = 0
